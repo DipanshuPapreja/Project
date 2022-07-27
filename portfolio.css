@@ -1,0 +1,755 @@
+/* https://youtu.be/zJE-ze4TfXc */
+
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --red:#ec1839;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Clicker script',cursive;
+}
+
+::before,::after {
+    box-sizing: border-box;
+}
+
+/*======================================= Navbar Section ================================================*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3E6F3;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    color:var(--text-black-900);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover{
+    color:#ec1839;
+}
+
+/* #mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+} */
+
+/*======================================= Home Section ================================================*/
+.section{
+    display: block;
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    padding: 0 30px;
+}
+
+/*========================================= Container Or Row Section ======================================== */
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+
+/*==================================== Home Section Start ================================================*/
+.home{
+    min-height: 100vh;
+    color: var(--text-black-900);
+    display: flex;
+}
+
+.padd-15
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.home .home-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.hello{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span{
+    font-family: 'Clicker Script',cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--red);
+}
+
+h3.my-profession{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+h3.my-profession .typing{
+    color: var(--red);
+}
+
+.home-info p{
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: var(--red);
+    border-radius: 40px;
+    display: inline-block;
+    white-space:nowrap;
+    color: white;
+    border: none;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.home .home-img{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home-img::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid var(--red);
+    border-left: 10px solid var(--red);
+    top: -40px;
+    left: -20px;
+}
+
+.home-img::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid var(--red);
+    border-right: 10px solid var(--red);
+    bottom: -40px;
+    right: 20px;
+}
+
+.home .home-img img{
+    height: 400px;
+}
+
+.hidden{
+    display: none;
+}
+
+/*==================================== Home Section End ================================================*/
+
+/*==================================== About Section Start =============================================*/
+
+.section .container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.about-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.about-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.about-title h2::before{
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+}
+
+.about-title h2::after{
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+
+/*========================= about content*/
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+}
+
+.about .about-content .about-text h3 span{
+    color: var(--red);
+}
+
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+.about .about-content .personal-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    margin-left: 4px;
+    color: var(--text-black-700);
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons{
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn{
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.about .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.about .about-content .skills .skill-item h5{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--text-black-900);
+}
+
+.about .about-content .skills .skill-item .progress{
+    width: 100%;
+    height: 7px;
+    border-radius: 4px;
+    background: var(--bg-black-50);
+    position: relative;
+}
+
+.about .about-content .skills .skill-item .progress-in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 76%;
+    height: 100%;
+    border-radius: 4px;
+    background: var(--red);
+}
+
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--text-black-900);
+}
+
+/*==================================== About Section End =============================================*/
+
+
+/*==================================== Service Section Start =============================================*/
+
+.section .container{
+    padding-bottom: 40px;
+}
+
+.service .service-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.service .service-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.service .service-title h2::before{
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+}
+
+.service .service-title h2::after{
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.service .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.service .service-item .service-item-inner{
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.service .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 3px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--red);
+    transition: all .3s ease;
+}
+
+.service .service-item .service-item-inner:hover .icon{
+    background: var(--red);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+/*==================================== Service Section End =============================================*/
+
+/*==================================== Portfolio Section Start =============================================*/
+
+.section .container{
+    padding-bottom: 40px;
+}
+
+.portfolio .portfolio-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.portfolio .portfolio-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.portfolio .portfolio-title h2::before{
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+}
+
+.portfolio .portfolio-title h2::after{
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.portfolio .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.portfolio .portfolio-heading h2{
+    color: var(--text-black-900);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.portfolio .portfolio-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img{
+    width: 100%;
+    display: block;
+    height: 30vh;
+}
+
+/*==================================== Portfolio Section End =============================================*/
+
+
+/*==================================== Client Section Start =============================================*/
+
+.section .container{
+    padding-bottom: 40px;
+}
+
+.client .client-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.client .client-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.client .client-title h2::before{
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+}
+
+.client .client-title h2::after{
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.client .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.client .service-item .service-item-inner{
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.client .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.client .service-item .service-item-inner img{
+    height: 20vh;
+    width: 12vw;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 3px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.client .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.client .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+/*==================================== Client Section End =============================================*/
+
+
+
+
+/*==================================== Contact Section Start =============================================*/
+
+.section .container{
+    padding-bottom: 40px;
+}
+
+.contact .main-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.contact .main-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.contact .main-title h2::before{
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+}
+
+.contact .main-title h2::after{
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    background: var(--red);
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+.contact .contact-title{
+    font-size: 25px;
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.contact .contact-sub-title{
+    font-size: 15px;
+    text-align: center;
+    color: var(--text-black-900);
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa{
+    font-size: 25px;
+    color: var(--red);
+}
+
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+
+/* 2:04:00 min */
+
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item{
+    margin-bottom: 60px;
+}
+
+.contact .contact-form .form-item .form-control{
+    font-family: 'Clicker script',cursive;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all .3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48,46,77,.15);
+}
+
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+
+.contact .contact-form .btn{
+    font-family: 'Clicker script',cursive;
+    height: 50px;
+    padding: 0 50px;
+}
+/*==================================== Contact Section End =============================================*/
